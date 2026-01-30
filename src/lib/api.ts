@@ -1,13 +1,14 @@
-import { projectId, publicAnonKey } from '../utils/supabase/info';
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL || '';
+const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY || '';
 
-const API_BASE = `https://${projectId}.supabase.co/functions/v1/make-server-7839915e`;
+const API_BASE = `${supabaseUrl}/functions/v1/make-server-7839915e`;
 
 async function apiCall(endpoint: string, options: RequestInit = {}) {
   const response = await fetch(`${API_BASE}${endpoint}`, {
     ...options,
     headers: {
       'Content-Type': 'application/json',
-      'Authorization': `Bearer ${publicAnonKey}`,
+      'Authorization': `Bearer ${supabaseAnonKey}`,
       ...options.headers,
     },
   });

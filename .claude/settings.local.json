@@ -81,7 +81,15 @@
       "mcp__slack__slack_list_channels",
       "mcp__slack__slack_post_message",
       "Bash(git -C \"C:\\\\Users\\\\Jason\\\\OneDrive\\\\문서\\\\Dev-Ops\" remote -v)",
-      "Bash(git init:*)"
+      "Bash(git init:*)",
+      "mcp__github__create_repository",
+      "Bash(gh repo create:*)",
+      "mcp__render__get_selected_workspace",
+      "mcp__render__list_workspaces",
+      "mcp__render__create_static_site",
+      "Bash(render:*)",
+      "Bash(curl:*)",
+      "Bash(git rm:*)"
     ]
   },
   "model": "sonnet",

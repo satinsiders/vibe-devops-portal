@@ -8,6 +8,9 @@ node_modules/
 dist/
 build/
 
+# Supabase generated files (use env vars instead)
+src/utils/supabase/info.tsx
+
 # Testing
 coverage/
 .nyc_output
